@@ -1,7 +1,7 @@
 ﻿
 namespace test2
 {
-    partial class Form1
+    partial class day
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,35 @@ namespace test2
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
+            this.label1.Location = new System.Drawing.Point(94, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(276, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Have a good day";
+            // 
+            // day
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(461, 156);
+            this.Controls.Add(this.label1);
+            this.Name = "day";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }
 
