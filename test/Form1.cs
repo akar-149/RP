@@ -19,6 +19,7 @@ namespace test
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
+            this.Opacity = 0;
             timer1.Enabled = true;
         }
 
@@ -29,6 +30,11 @@ namespace test
                 timer1.Enabled = false;
             }
             this.Opacity += 0.05;
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
